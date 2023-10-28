@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 黑體;
+}
+body{
+  overflow: hidden;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+section .color{
+  position: absolute;
+}
+section .color:nth-child(1){
+  top: -350px;
+  width: 600px;
+  height: 600px;
+  background: #ff359b;
+}
+section .color:nth-child(2){
+  top: -150px;
+  left: 100px;
+  width: 500px;
+  height: 500px;
+  background: #fffd87;
+}
+section .color:nth-child(3){
+  bottom: 50px;
+  right: 100px;
+  width: 300px;
+  height: 300px;
+  background: #00dfff;
+}
+section .color{
+  filter: blur(150px);
+}
+
+.container{
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, .1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-right: 1px solid rgba(255, 255, 255, .2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.form{
+  position: relative;
+  width: 100%;
+  height:  100%;
+  padding: 40px;
+}
+.form h2 {
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.form h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px;
+  height: 4px;
+  background: #fff;
+}
+.testBtnnn body{
+  padding: 30px;
+  background-color: #f0f0ee;
+}
+.testBtnnn{
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #333;
+  user-select: none;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px #ccc;
+  box-shadow:
+	20px 20px 30px rgba(0, 0, 0, 0.2),
+	-20px -20px 30px rgba(255, 255, 255, 1);
+	
+	
+}
+.testBtnnn:hover{
+  box-shadow:
+	0 0 0 rgba(0, 0, 0, 0.2),
+	0 0 0 rgba(255, 255, 255, 0.8),
+	inset 10px 10px 20px rgba(0, 0, 0, 0.1),
+	inset -10px -10px 20px rgba(255, 255, 255, 1);
+}
+.testBtnnn{
+  transition: all 0.4s ease-out;
+  margin-top: 20px;
+}
+.testBtnnn:hover{
+  font-size: 18px;
+}
