@@ -79,13 +79,98 @@ section .color{
   height: 4px;
   background: #fff;
 }
+.form .inputBox{
+  width: 100%;
+  margin-top: 20px;
+}
+.form .inputBox input{
+  width: 100%;
+  background: rgba(255, 255, 255, .2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, .5);
+  border-right: 1px solid rgba(255, 255, 255, .2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+}
+.form .inputBox input::placeholder{
+  color: #fff;
+}
+.form .inputBox input[type='submit']{
+  background: #fff;
+  color: #666;
+  max-width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.forget{
+  margin-top: 5px;
+  color: #fff;
+}
+.forget a{
+  color: #fff;
+  font-weight: 600;
+}
+
+.box{
+  position: relative;
+}
+
+
+.test{
+  position: relative;
+}
+.test input{
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1em;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, .2);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, .5);
+  border-right: 1px solid rgba(255, 255, 255, .2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+  
+}
+.test span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 1em;
+  pointer-events: none;
+  color: #ccc;
+  border-radius: 15px;
+}
+.test input:valid ~ span,
+.test input:focus ~ span{
+  color: orange;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 1em;
+  padding: 0 4px;
+  background: rgba(255, 255, 255, .2);
+
+}
+.test span{
+  transition: all 0.5s;
+}
+
 .testBtnnn body{
   padding: 30px;
   background-color: #f0f0ee;
 }
 .testBtnnn{
   width: 100%;
-  max-width: 150px;
+  max-width: 100px;
   margin-bottom: 20px;
   font-weight: 600;
   background-color: #fff;
